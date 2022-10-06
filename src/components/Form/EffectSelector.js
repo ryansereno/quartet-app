@@ -7,8 +7,9 @@ import painIcon from "../../assets/pain.png";
 import stressIcon from "../../assets/stress.png";
 
 const EffectSelector = (props) => {
+  const show = props.show === "entering" ? "open" : props.show ==="exiting"? "closed":null
   return (
-    <Card style={props.style}>
+    <Card style={show}>
       <h2>Select your desired effect</h2>
       <div className="radio-buttons">
         <RadioButton effectTitle="Energy" image={energyIcon} />
