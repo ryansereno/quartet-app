@@ -2,7 +2,7 @@ import Card from "../UI/Card";
 const LocationSelector = (props) => {
   return (
     <Card>
-      <div>
+      <h2>Select a dispensary</h2>
         <select name="dropdown">
           <option value="Santa Rosa" selected>
             Santa Rosa
@@ -11,10 +11,8 @@ const LocationSelector = (props) => {
           <option value="Sonoma">Sonoma</option>
         </select>
         <div>
-
-        <button onClick={props.slideForward}>Next</button>
+          <button onClick={props.slideForward}>Next</button>
         </div>
-      </div>
     </Card>
   );
 };

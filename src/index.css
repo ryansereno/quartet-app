@@ -25,8 +25,16 @@ header {
   margin: 0 auto;
   text-align: center;
 }
+.radio-buttons .btn-span{
+  display: block;
+}
 .custom-radio input {
   display: none;
+}
+.custom-radio input:checked+.radio-btn{
+  background-color:#262626;
+  box-shadow: 0 0 10px white;
+  transform: scale(102%)
 }
 .radio-btn {
   margin: 10px;
@@ -40,7 +48,8 @@ header {
   cursor: pointer;
 }
 .radio-btn:hover{
-  box-shadow: 0 0 20px white;
+  box-shadow: 0 0 10px white;
+  transform: scale(102%)
 }
 .radio-btn .effect-icon {
   width: 100%;
@@ -49,7 +58,6 @@ header {
   top:40%;
   left:50%;
   transform: translate(-50%, -50%);
-  background-color:black;
 }
 .radio-btn h3{
   margin: 0;
@@ -61,6 +69,7 @@ button {
   border-radius: 5rem;
   border: none;
   margin: 1rem;
+  font-weight: bold;
 }
 .card {
   background-color: black;
