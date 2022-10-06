@@ -15,9 +15,18 @@ const SliderForm = (props) => {
   };
   return (
     <form onSubmit={props.onSubmit} className="multi-step-form">
-      {page === 1 && <FormIntro slideForward={slideForwardHandler} />}
-      {page === 2 && <LocationSelector slideForward={slideForwardHandler} />}
-      {page === 3 && <EffectSelector slideBack={slideBackHandler} />}{" "}
+      <FormIntro
+        slideForward={slideForwardHandler}
+        style={page === 1 ? "open" : "closed"}
+      />
+      <LocationSelector
+        slideForward={slideForwardHandler}
+        style={page === 2 ? "open" : "closed"}
+      />
+      <EffectSelector
+        slideBack={slideBackHandler}
+        style={page === 3 ? "open" : "closed"}
+      />
     </form>
   );
 };

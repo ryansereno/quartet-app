@@ -63,6 +63,14 @@ header {
 .radio-btn h3{
   margin: 0;
 }
+.open{
+  opacity: 1;
+  transform: translateX(0)
+}
+.closed{
+  opacity: 0;
+  transform: translateX(-100%);
+}
 button {
   color: black;
   background-color: white;
@@ -93,6 +101,7 @@ transform:translateY(-2px);
   height: fit-content;
   margin: 0 auto;
   text-align: center;
+  transition: all 250ms ease-in;
   /*animation: fade 250ms ease-in-out forwards;*/
 }
 .card h2 {

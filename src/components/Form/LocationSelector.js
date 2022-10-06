@@ -1,7 +1,7 @@
 import Card from "../UI/Card";
 const LocationSelector = (props) => {
   return (
-    <Card>
+    <Card style={props.style}>
       <div className="location-select">
 
       <h2>Select a dispensary</h2>

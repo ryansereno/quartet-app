@@ -8,7 +8,7 @@ import stressIcon from "../../assets/stress.png";
 
 const EffectSelector = (props) => {
   return (
-    <Card>
+    <Card style={props.style}>
       <h2>Select your desired effect</h2>
       <div className="radio-buttons">
         <RadioButton effectTitle="Energy" image={energyIcon} />

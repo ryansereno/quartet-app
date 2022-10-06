@@ -1,4 +1,4 @@
-import {useState} from 'react'
+import { useState } from "react";
 import SliderForm from "./components/Form/SliderForm";
 import quartetLogo from "./assets/quartet-logo.png";
 import RecommendationList from "./components/Recommendations/RecommendationList";
@@ -14,8 +14,8 @@ function App() {
       <header className="App-header">
         <img src={quartetLogo} alt="" width="8%" />
       </header>
-      {!submitted && <SliderForm onSubmit={submitHandler} />}{" "}
-      {submitted && <RecommendationList />}{" "}
+      {!submitted && <SliderForm onSubmit={submitHandler} />}
+      {submitted && <RecommendationList />}
     </div>
   );
 }
