@@ -1,36 +1,30 @@
 import Card from "../UI/Card";
+import RadioButton from '../UI/RadioButton'
+import energyIcon from "../../assets/energy.png";
+import sleepIcon from "../../assets/sleep.png";
+import focusIcon from "../../assets/focus.png";
+import painIcon from "../../assets/pain.png";
+import stressIcon from "../../assets/stress.png";
+
+const effects = [
+  "Energy",
+  "Sedation",
+  "Pain Management",
+  "Focus",
+  "Stress Reduction",
+];
 
 const EffectSelector = (props) => {
   return (
     <Card>
-      <div>
-        <div>
-          <img src={energy} alt="" />
-          <label for="Energy">
-            <input type="radio" id="Energy" name="effect" />
-            Energy
-          </label>
-        </div>
+      
+      <div className="radio-buttons">
+      <RadioButton effectTitle="Energy" image={energyIcon} />
+      <RadioButton effectTitle="Sleep" image={sleepIcon} />
+      <RadioButton effectTitle="Focus" image={focusIcon} />
+      <RadioButton effectTitle="Pain Management" image={painIcon} />
+      <RadioButton effectTitle="Stress Reduction" image={stressIcon} />
 
-        <label for="Sedation">
-          <input type="radio" id="Sedation" name="effect" />
-          Sedation
-        </label>
-
-        <label htmlFor="">
-          <input type="radio" name="effect" />
-          Pain Management
-        </label>
-
-        <label htmlFor="">
-          <input type="radio" name="effect" />
-          Focus
-        </label>
-
-        <label htmlFor="">
-          <input type="radio" name="effect" />
-          Stress Reduction
-        </label>
         <button onClick={props.slideBack}>Back</button>
         <button>Submit</button>
       </div>
