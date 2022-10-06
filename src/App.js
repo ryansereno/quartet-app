@@ -12,7 +12,9 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={quartetLogo} alt="" width="8%" />
+        <a href="/">
+          <img src={quartetLogo} alt="" width="8%" />
+        </a>{" "}
       </header>
       {!submitted && <SliderForm onSubmit={submitHandler} />}
       {submitted && <RecommendationList />}

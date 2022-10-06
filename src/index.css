@@ -20,6 +20,11 @@ header {
 .effect-img {
   width: 50%;
 }
+.form-image{
+  width: 100%;
+  margin-top: 20px;
+  margin-bottom:10px;
+}
 .radio-buttons {
   width: 100%;
   margin: 0 auto;
@@ -97,9 +102,9 @@ transform:translateY(-2px);
   border: 1px solid white;
   border-radius: 0.5rem;
   padding: 0.5rem;
-  width: clamp(200px, 60%, 700px);
+  width: clamp(200px, 60%, 690px);
   height: fit-content;
-  margin: 0 auto;
+  margin: auto;
   text-align: center;
   transition: all 250ms ease-in;
 }
@@ -144,6 +149,7 @@ transform:translateY(-2px);
 .multi-step-form {
   overflow: hidden;
   position: relative;
+  margin-top: 5%;
 }
 
 .hide {
