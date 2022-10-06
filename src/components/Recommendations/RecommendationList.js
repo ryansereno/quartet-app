@@ -1,10 +1,17 @@
-import ProductItem from './ProductItem'
-const RecommendationList = (props) =>{
-  return (
-  <ul>
-    <ProductItem />
-  </ul>
-  )
-}
+import ProductItem from "./ProductItem";
+import Card from "../UI/Card";
+import classes from "./RecommendationList.module.css"
 
-export default RecommendationList
+const products = [{ name: "OG Kush Flower", price: 23.0 }];
+const RecommendationList = (props) => {
+  const productsList = products.map((product) => {
+    return <ProductItem key={product.name} itemName={product.name} price={product.price} />;
+  });
+  return (
+    <Card>
+      <ul>{productsList}</ul>
+    </Card>
+  );
+};
+
+export default RecommendationList;

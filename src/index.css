@@ -46,6 +46,7 @@ header {
   position: relative;
   text-align: center;
   cursor: pointer;
+  transition: ease-in 50ms;
 }
 .radio-btn:hover{
   box-shadow: 0 0 10px white;
@@ -70,6 +71,18 @@ button {
   border: none;
   margin: 1rem;
   font-weight: bold;
+  transition: ease-in 100ms;
+}
+button:hover{
+cursor: pointer;
+transform:translateY(-2px); 
+}
+.location-select h2{
+  padding-bottom: 20px;
+}
+.location-select select{
+  padding:10px 20px;
+  border-radius: 5rem;
 }
 .card {
   background-color: black;

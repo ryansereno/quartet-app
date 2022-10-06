@@ -3,7 +3,7 @@ import LocationSelector from "./LocationSelector";
 import EffectSelector from "./EffectSelector";
 import FormIntro from "./FormIntro";
 
-const SliderForm = () => {
+const SliderForm = (props) => {
   const [page, setPage] = useState(1);
   const slideForwardHandler = (event) => {
     event.preventDefault();
@@ -14,7 +14,7 @@ const SliderForm = () => {
     setPage(page - 1);
   };
   return (
-    <form action="" className="multi-step-form">
+    <form onSubmit={props.onSubmit} className="multi-step-form">
       {page === 1 && <FormIntro slideForward={slideForwardHandler} />}
       {page === 2 && <LocationSelector slideForward={slideForwardHandler} />}
       {page === 3 && <EffectSelector slideBack={slideBackHandler} />}{" "}
