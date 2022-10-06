@@ -17,14 +17,28 @@ header{
   margin-left: 20px;
   margin-top: 20px;
 }
+button{
+  color: black;
+  background-color: white;
+  padding:10px;
+  border-radius: 5rem;
+  border: none;
+  margin: 1rem;
+  
+}
 .card {
   background-color: black;
   border: 1px solid white;
   border-radius: .5rem;
   padding: .5rem;
-  max-width: 300px;
+  width: clamp(200px, 60%, 700px);
+  height:fit-content ;
   margin: 0 auto;
+  text-align: center;
   /*animation: fade 250ms ease-in-out forwards;*/
+}
+.card h2{
+  margin: 0;
 }
 
 .form-group {

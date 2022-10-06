@@ -1,4 +1,4 @@
-import SliderForm from './components/SliderForm'
+import SliderForm from './components/Form/SliderForm'
 import quartetLogo from './assets/quartet-logo.png'
 function App() {
   return (

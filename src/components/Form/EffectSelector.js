@@ -1,12 +1,16 @@
-import Card from "./UI/Card";
+import Card from "../UI/Card";
+
 const EffectSelector = (props) => {
   return (
     <Card>
       <div>
-        <label for="Energy">
-          <input type="radio" id="Energy" name="effect" />
-          Energy
-        </label>
+        <div>
+          <img src={energy} alt="" />
+          <label for="Energy">
+            <input type="radio" id="Energy" name="effect" />
+            Energy
+          </label>
+        </div>
 
         <label for="Sedation">
           <input type="radio" id="Sedation" name="effect" />
