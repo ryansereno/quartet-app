@@ -6,15 +6,22 @@ import Transition from "react-transition-group/Transition";
 
 const SliderForm = (props) => {
   const [page, setPage] = useState(1);
+  const [allowSlideAdvance, setAllowSlideAdvance] = useState(true);
   const slideForwardHandler = (event) => {
     event.preventDefault();
+    setAllowSlideAdvance(false);
+    setPage(page + 1);
     setTimeout(() => {
-      setPage(page + 1);
-    }, 2500);
+      setAllowSlideAdvance(true);
+    }, 260);
   };
   const slideBackHandler = (event) => {
     event.preventDefault();
+    setAllowSlideAdvance(false);
     setPage(page - 1);
+    setTimeout(() => {
+      setAllowSlideAdvance(true);
+    }, 260);
   };
   return (
     <form onSubmit={props.onSubmit} className="multi-step-form">
@@ -23,14 +30,24 @@ const SliderForm = (props) => {
           return <FormIntro slideForward={slideForwardHandler} show={state} />;
         }}
       </Transition>
-      <Transition in={page === 2} timeout={250} mountOnEnter unmountOnExit>
+      <Transition
+        in={page === 2 && allowSlideAdvance}
+        timeout={250}
+        mountOnEnter
+        unmountOnExit
+      >
         {(state) => {
           return (
             <LocationSelector slideForward={slideForwardHandler} show={state} />
           );
         }}
       </Transition>
-      <Transition in={page === 3} timeout={250} mountOnEnter unmountOnExit>
+      <Transition
+        in={page === 3 && allowSlideAdvance}
+        timeout={250}
+        mountOnEnter
+        unmountOnExit
+      >
         {(state) => {
           return <EffectSelector slideBack={slideBackHandler} show={state} />;
         }}
