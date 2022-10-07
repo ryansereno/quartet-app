@@ -7,7 +7,7 @@ import painIcon from "../../assets/pain.png";
 import stressIcon from "../../assets/stress.png";
 
 const EffectSelector = (props) => {
-  const show = props.show === "entering" ? "open" : props.show ==="exiting"? "closed":null
+  const show = props.show === "entering" ? "entering" :props.show==="entered"? "open": props.show=== "exiting"? "closed" : null
   return (
     <Card style={show}>
       <h2>Select your desired effect</h2>

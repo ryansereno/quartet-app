@@ -1,6 +1,6 @@
 import Card from "../UI/Card";
 const LocationSelector = (props) => {
-  const show = props.show === "entering" ? "open" : props.show ==="exiting"? "closed":null
+  const show = props.show === "entering" ? "entering" :props.show==="entered"? "open": props.show=== "exiting"? "closed" : null
   return (
     <Card style={show}>
       <div className="location-select">

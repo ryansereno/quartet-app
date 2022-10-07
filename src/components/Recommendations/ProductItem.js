@@ -4,7 +4,7 @@ const ProductItem = (props) => {
     <div className={classes.container} >
       <p className={classes.title}>{props.itemName}</p>
       <p className={classes.price} >${props.price.toFixed(2)}</p>
-      <button>Buy Now</button>
+      <button className={classes.right}>Buy Now</button>
     </div>
   );
 };

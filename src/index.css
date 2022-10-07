@@ -69,12 +69,14 @@ header {
   margin: 0;
 }
 .open{
-  opacity: 1;
+  opacity: 1 !important;
   transform: translateX(0)
 }
 .closed{
-  opacity: 0;
   transform: translateX(-100%);
+}
+.entering{
+  transform: translateX(100%);
 }
 button {
   color: black;
@@ -107,9 +109,10 @@ transform:translateY(-2px);
   margin: auto;
   text-align: center;
   transition: all 250ms ease-in;
+  opacity: 0;
 }
-.card h2 {
-  margin: 0;
+h2 {
+  margin: 100;
 }
 
 .form-group {
@@ -149,7 +152,6 @@ transform:translateY(-2px);
 .multi-step-form {
   overflow: hidden;
   position: relative;
-  margin-top: 5%;
 }
 
 .hide {

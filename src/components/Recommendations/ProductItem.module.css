@@ -1,4 +1,7 @@
 .container{
+  display: flex;
+  justify-content: space-between;
+  flex-flow: row wrap;
   width: 100%;
   border: 1px solid lightgray;
   margin-bottom: 10px;
@@ -14,4 +17,7 @@
 }
 li{
   list-style: none;
+}
+.container p{
+  margin-left: 20px;
 }
