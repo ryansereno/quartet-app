@@ -5,7 +5,6 @@ import RecommendationList from "./components/Recommendations/RecommendationList"
 function App() {
   const [submitted, setSubmitted] = useState(false);
   const submitHandler = (event) => {
-    event.preventDefault();
     console.log("submitted");
     setSubmitted(true);
   };

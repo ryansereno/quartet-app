@@ -1,6 +1,7 @@
 .container{
   width: 100%;
   border: 1px solid lightgray;
+  margin-bottom: 10px;
 }
 .title{
   display: inline;

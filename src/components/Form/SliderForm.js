@@ -23,8 +23,15 @@ const SliderForm = (props) => {
       setAllowSlideAdvance(true);
     }, 260);
   };
+  const delaySubmitHandler = (event) =>{
+    event.preventDefault()
+    setPage(page+1)
+    setTimeout(() => {
+      props.onSubmit()
+    }, 260);
+  }
   return (
-    <form onSubmit={props.onSubmit} className="multi-step-form">
+    <form onSubmit={delaySubmitHandler} className="multi-step-form">
       <Transition in={page === 1} timeout={250} mountOnEnter unmountOnExit>
         {(state) => {
           return <FormIntro slideForward={slideForwardHandler} show={state} />;
@@ -43,7 +50,7 @@ const SliderForm = (props) => {
         }}
       </Transition>
       <Transition
-        in={page === 3 && allowSlideAdvance}
+        in={page === 3 && allowSlideAdvance }
         timeout={250}
         mountOnEnter
         unmountOnExit

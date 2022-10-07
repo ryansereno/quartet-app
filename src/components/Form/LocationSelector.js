@@ -7,7 +7,7 @@ const LocationSelector = (props) => {
 
       <h2>Select a dispensary</h2>
         <select name="dropdown">
-          <option value="Santa Rosa" selected>
+          <option value="Santa Rosa" defaultValue>
             Santa Rosa
           </option>
           <option value="San Francisco">San Francisco</option>
