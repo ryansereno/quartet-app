@@ -1,12 +1,13 @@
 import "./spinner.css";
 import * as React from "react";
-
+//convert SVG into component with SVGR utility
 const Spinner = (props) => (
   <div className="container">
     {" "}
     <svg
-      width={400}
-      height={400}
+      width={100}
+      height={100}
+      viewBox="0 0 400 400"
       xmlSpace="preserve"
       xmlnsXlink="http://www.w3.org/1999/xlink"
       xmlns="http://www.w3.org/2000/svg"

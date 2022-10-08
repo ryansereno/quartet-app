@@ -1,7 +1,6 @@
 .container{
-  display: flex;
-  justify-content: space-between;
-  flex-flow: row wrap;
+  grid-template-columns: 1fr 1fr .5fr;
+    display: grid;
   width: 100%;
   border: 1px solid lightgray;
   margin-bottom: 10px;

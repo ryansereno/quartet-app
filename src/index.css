@@ -18,32 +18,49 @@ header {
   margin-left: 20px;
   margin-top: 20px;
 }
-.header-icon{
+.header-icon {
   height: 10vw;
+}
+.modal {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+  width: 100%;
+  height: 100vh;
+  z-index: 100;
+  transition: 0.5s ease-in;
+}
+.modal-open {
+  opacity: 1;
+}
+.modal-closed {
+  opacity: 0;
 }
 .effect-img {
   width: 50%;
 }
-.form-image{
+.form-image {
   width: 100%;
   margin-top: 20px;
-  margin-bottom:10px;
+  margin-bottom: 10px;
 }
 .radio-buttons {
   width: 100%;
   margin: 0 auto;
   text-align: center;
 }
-.radio-buttons .btn-span{
+.radio-buttons .btn-span {
   display: block;
 }
 .custom-radio input {
   display: none;
 }
-.custom-radio input:checked+.radio-btn{
-  background-color:#262626;
+.custom-radio input:checked + .radio-btn {
+  background-color: #262626;
   box-shadow: 0 0 10px white;
-  transform: scale(102%)
+  transform: scale(102%);
 }
 .radio-btn {
   margin: 10px;
@@ -57,29 +74,29 @@ header {
   cursor: pointer;
   transition: ease-in 50ms;
 }
-.radio-btn:hover{
+.radio-btn:hover {
   box-shadow: 0 0 10px white;
-  transform: scale(102%)
+  transform: scale(102%);
 }
 .radio-btn .effect-icon {
   width: 100%;
   height: 80px;
   position: absolute;
-  top:40%;
-  left:50%;
+  top: 40%;
+  left: 50%;
   transform: translate(-50%, -50%);
 }
-.radio-btn h3{
+.radio-btn h3 {
   margin: 0;
 }
-.open{
+.open {
   opacity: 1 !important;
-  transform: translateX(0)
+  transform: translateX(0);
 }
-.closed{
+.closed {
   transform: translateX(-100%);
 }
-.entering{
+.entering {
   transform: translateX(100%);
 }
 button {
@@ -92,15 +109,15 @@ button {
   font-weight: bold;
   transition: ease-in 100ms;
 }
-button:hover{
-cursor: pointer;
-transform:translateY(-2px); 
+button:hover {
+  cursor: pointer;
+  transform: translateY(-2px);
 }
-.location-select h2{
+.location-select h2 {
   padding-bottom: 20px;
 }
-.location-select select{
-  padding:10px 20px;
+.location-select select {
+  padding: 10px 20px;
   border-radius: 5rem;
 }
 .card {

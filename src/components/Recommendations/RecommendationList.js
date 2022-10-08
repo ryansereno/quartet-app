@@ -17,6 +17,7 @@ const RecommendationList = (props) => {
   const show = props.show === "entering" ? "entering" :props.show==="entered"? "open": props.show=== "exiting"? "closed" : null
   return (
     <Card style={show}>
+
 <h2>Product Recomendations</h2>
       <ul>{productsList}</ul>
     </Card>

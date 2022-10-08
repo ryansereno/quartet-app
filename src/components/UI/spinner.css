@@ -1,21 +1,19 @@
-
-#container{
-  height: vh;
+.container {
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-content: center;
 }
-#a9239{
-stroke-dasharray: 200;
-stroke-dashoffset: 0;
-animation: 2s linear load;
-animation-iteration-count: infinite;
+#a9239 {
+  stroke-dasharray: 200;
+  stroke-dashoffset: 0;
+  animation: 2s linear load;
+  animation-iteration-count: infinite;
 }
-@keyframes load{
-  0%{
-    stroke-dashoffset:0;
+@keyframes load {
+  0% {
+    stroke-dashoffset: 0;
   }
-  100%{
-    stroke-dashoffset:-1600;
+  100% {
+    stroke-dashoffset: -1600;
   }
 }

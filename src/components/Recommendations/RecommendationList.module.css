@@ -1,5 +1,10 @@
-
-ul{
+ul {
   padding: 0;
   list-style: none;
+  display: grid;
+}
+.container{
+
+grid-template-columns: 1fr 1fr .5fr;
+display: grid;
 }
