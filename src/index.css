@@ -14,8 +14,12 @@ code {
     monospace;
 }
 header {
+  display: inline-block;
   margin-left: 20px;
   margin-top: 20px;
+}
+.header-icon{
+  height: 10vw;
 }
 .effect-img {
   width: 50%;

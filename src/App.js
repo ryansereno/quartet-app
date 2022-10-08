@@ -3,7 +3,9 @@ import SliderForm from "./components/Form/SliderForm";
 import quartetLogo from "./assets/quartet-logo.png";
 import RecommendationList from "./components/Recommendations/RecommendationList";
 import Transition from "react-transition-group/Transition";
+import Spinner from './components/UI/Spinner'
 function App() {
+  const [isLoading, setIsLoading] = useState(true)
   const [submitted, setSubmitted] = useState(false);
   const submitHandler = (event) => {
     console.log("submitted");
@@ -11,10 +13,11 @@ function App() {
   };
   return (
     <div className="App">
+     <Spinner/> 
       <header className="App-header">
-        <a href="/">
-          <img src={quartetLogo} alt="" width="8%" />
-        </a>{" "}
+          <a href="/">
+            <img src={quartetLogo} alt="" className="header-icon" />
+          </a>        
       </header>
       {!submitted && <SliderForm onSubmit={submitHandler} />}
       <Transition in={submitted} timeout={250} mountOnEnter unmountOnExit>
