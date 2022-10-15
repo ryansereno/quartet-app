@@ -1,5 +1,7 @@
 # Quartet 
 Quartet makes cannabis more reliable through chemistry.
+<br>
+
 Quartet uses cannabinoid and terpenoid data to make more Effective and Reliable medicine.
 <img src="./images/landing.png" alt="" width="450px">
 <br>
