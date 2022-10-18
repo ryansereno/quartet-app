@@ -6,7 +6,7 @@
 <br />
 <div align="center">
   <a href="https://github.com/ryansereno/quartet-app/" >
-    <img src="images/Quartet logo black.png" alt="Logo" width="150">
+    <img src="images/Quartet logo black small.jpg" alt="Logo" width="250">
   </a>
 
 <h1 align="center">Quartet</h1>
@@ -69,7 +69,10 @@ Install NPM packages
    ```sh
    npm install
    ```
-
+Run
+   ```sh
+   npm start
+   ```
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
