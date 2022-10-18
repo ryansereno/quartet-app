@@ -5,15 +5,14 @@
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-  <a href="https://github.com/github_username/repo_name">
-    <img src="images/logo.png" alt="Logo" width="80" height="80">
+  <a href="https://github.com/ryansereno/quartet-app/" style="background-color:white>
+    <img src="images/Quartet logo black.png" alt="Logo" width="150" height="150">
   </a>
 
 <h1 align="center">Quartet</h1>
 
   <h2 align="center">
     Cannabis Product Recommendation Platform
-  <br/>
     <a href="https://quartet.ai">View Demo</a>
     
    
@@ -24,8 +23,12 @@
 
 <!-- ABOUT THE PROJECT -->
 ## About The Project
+<div>
+    <img src="images/landing.png"  width="500">
+    <br/>
+        <img src="images/effects.png"  width="500">
 
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
+
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -43,7 +46,7 @@ Quartet uses real-world chemical and pharmacology data to provide effective prod
 <li>Quartet uses machine learning to determine the best product combination to deliver the most effective experience</li>
 </ul>
 
-
+</div>
 
 
 ### Built With
@@ -56,34 +59,18 @@ Quartet uses real-world chemical and pharmacology data to provide effective prod
 
 
 <!-- GETTING STARTED -->
-## Getting Started
 
-This is an example of how you may give instructions on setting up your project locally.
-To get a local copy up and running follow these simple example steps.
+## Installation
 
-### Prerequisites
-
-This is an example of how to list things you need to use the software and how to install them.
-* npm
-  ```sh
-  npm install npm@latest -g
-  ```
-
-### Installation
-
-1. Get a free API Key at [https://example.com](https://example.com)
-2. Clone the repo
+Clone the repo
    ```sh
    git clone https://github.com/github_username/repo_name.git
    ```
-3. Install NPM packages
+Install NPM packages
    ```sh
    npm install
    ```
-4. Enter your API in `config.js`
-   ```js
-   const API_KEY = 'ENTER YOUR API';
-   ```
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
