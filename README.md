@@ -14,7 +14,7 @@
   <h2 align="center">
     Cannabis Product Recommendation Platform
   <br/>
-    <a href="https://github.com/github_username/repo_name">View Demo</a>
+    <a href="https://quartet.ai">View Demo</a>
     
    
   </h2>
