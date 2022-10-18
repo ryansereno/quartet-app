@@ -25,7 +25,9 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 <div>
+<div align="center">
     <img src="images/landing.png"  width="500"><img src="images/effects.png"  width="500">
+</div>
 
 
 
