@@ -6,7 +6,7 @@ let products = []
 for ( let i = 0; i<6; i++ ){
   const newProduct = {
     name:names[i],
-    price: Math.random()*50
+    price: Math.floor(Math.random()*40)+10
   }
  products.push(newProduct)
 }

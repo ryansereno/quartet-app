@@ -13,6 +13,8 @@ const LocationSelector = (props) => {
           <option value="San Francisco">San Francisco</option>
           <option value="Sonoma">Sonoma</option>
         </select>
+
+
         <div>
           <button onClick={props.slideForward}>Next</button>
         </div>
